@@ -5,7 +5,7 @@ Activity where I had to create some plugin for jQuery, I decided to make a virtu
 
 ### Params
 - 1 param: rows number [default = 3]
-- 2 param: true = random, else sorted
+- 2 param: true = random, else sorted [default = false]
 
 ### Examples
 - $('#num').TeclNum(); //3 numbers for row, sorted
