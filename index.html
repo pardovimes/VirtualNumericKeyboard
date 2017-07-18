@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script src="jquery-183min.js"></script>
+  <script src="TeclNumPlugin.js"></script>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+	Name: <br><input type='text' id='nom' value="" /><br>
+	Surname: <br><input type='text' id='sur' value="" /><br>
+	Code: <br><input type='text' id='num' value="" /><br>
+	Password: <br><input type='password' id='pass' value="" /><br>
+	
+	<script>
+		$(document).ready(function() {
+			//1 param, numero de numeros por fila - default = 3
+			//2 param true = random, else ordenado
+			$('#num').TeclNum(6,true);
+		});
+  	</script>
+</body>
+</html>
