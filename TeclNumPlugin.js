@@ -1,4 +1,4 @@
-jQuery.fn.TeclNum = function(lin,rand = false){
+jQuery.fn.TeclNum = function(lines = 3,rand = false){
 	return this.each(function(index){
 		//id of the div
 		var id= $(this).attr('id');
@@ -16,12 +16,10 @@ jQuery.fn.TeclNum = function(lin,rand = false){
 		//shuffle numbers
 		if(rand) shuffle(nums);
 		
-		if(!lin)var lineas=3;
-		else lineas=lin;
 		//add buttons to div
 		for(var i=1;i<nums.length+1;i++){
 			$('#teclNum'+id).append(nums[i]);
-			if(i%lineas==0) $('#teclNum'+id).append('<br>');
+			if(i%lines==0) $('#teclNum'+id).append('<br>');
 		}
 		
 		//add the delete button
